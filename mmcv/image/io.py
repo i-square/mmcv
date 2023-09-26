@@ -142,7 +142,7 @@ def _pillow2array(img,
 
 
 def imread(img_or_path: Union[np.ndarray, str, Path],
-           flag: str = 'color',
+           flag: str = 'unchanged',
            channel_order: str = 'bgr',
            backend: Optional[str] = None,
            file_client_args: Optional[dict] = None,
@@ -230,7 +230,7 @@ def imread(img_or_path: Union[np.ndarray, str, Path],
 
 
 def imfrombytes(content: bytes,
-                flag: str = 'color',
+                flag: str = 'unchanged',
                 channel_order: str = 'bgr',
                 backend: Optional[str] = None) -> np.ndarray:
     """Read an image from bytes.
